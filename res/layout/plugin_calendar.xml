@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h_calendar"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/table_weektitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_weekdays"
+        android:background="@drawable/xml_back_weekdays"
+        android:paddingLeft="@dimen/p_weekdays_left" >
+
+        <TextView style="@style/WeekdayStyle"
+            android:text="@string/sunday" />
+        
+        <TextView style="@style/WeekdayStyle"
+            android:text="@string/monday" />
+        
+        <TextView style="@style/WeekdayStyle"
+            android:text="@string/tuesday" />
+        
+        <TextView style="@style/WeekdayStyle"
+            android:text="@string/wednesday" />
+        
+        <TextView style="@style/WeekdayStyle"
+            android:text="@string/tuesday" />
+        
+        <TextView style="@style/WeekdayStyle"
+            android:text="@string/friday" />
+        
+        <TextView style="@style/WeekdayStyle"
+            android:text="@string/saturday" />
+        
+    </TableRow>
+
+    <GridView
+        android:id="@+id/grid_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_calendar_grid"
+        android:background="#FFC8C8C8"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/s_spacing"
+        android:listSelector="@null"
+        android:numColumns="7"
+        android:paddingLeft="@dimen/p_calendar_left"
+        android:paddingTop="@dimen/p_calendar_top"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/s_spacing" />
+
+</LinearLayout>

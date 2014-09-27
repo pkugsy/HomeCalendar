@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="blank"></string>
+    <string name="app_name">HomeCalendar</string>
+    <string name="app_name_menses">Home Calendar: Peroid</string>
+    <string name="ten">10</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="default_year">2014</string>
+    <string name="default_month">02</string>
+    <string name="default_day">10</string>
+    <string name="default_date">2013年11月</string>
+    <string name="default_lunar">癸巳蛇年十月廿八</string>
+    <string name="default_weather">无天气信息，请更新</string>
+    <string name="default_festival">今日无节日</string>
+    
+    <string name="solar">28</string>
+    <string name="lunar">廿六</string>
+    <string name="hint">感\n恩\n节</string>
+    
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
+    
+    <!-- string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string-->
+    
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    
+    <string name="password0">原有口令</string>
+    <string name="password1">新置口令</string>
+    <string name="password2">确认口令</string>
+    
+    <string name="lunar_hint">农历</string>
+    <string name="weather_hint">天气</string>
+    <string name="festival_hint">节日</string>
+    <string name="menses_hint">Tip</string>
+    <string name="menses2_hint">Hint</string>
+    
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="settings">设置</string>
+    <string name="exit">退出</string>
+    <string name="back">back</string>
+    
+    <string name="ok_en">OK</string>
+    <string name="cancel_en">Cancel</string>
+    <string name="settings_en">Settings</string>
+    <string name="period">Period</string>
+    <string name="duration">Duration</string>
+    <string name="history">History</string>
+    <string name="set">Set</string>
+    <string name="password_switch">Use Password?</string>
+    <string name="password">Password</string>
+</resources>

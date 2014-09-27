@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- The first screen the workspace should display. -->
+    <!-- declare-styleable name="Workspace">
+        <attr name="defaultScreen" format="integer" />
+    </declare-styleable-->
+
+</resources>

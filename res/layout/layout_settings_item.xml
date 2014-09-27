@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h_title"
+    android:padding="@dimen/p_nest"
+    android:orientation="horizontal" >
+    
+    <View
+        android:id="@+id/settings_item_icon"
+        android:layout_width="@dimen/w_button"
+        android:layout_height="@dimen/h_button"
+        android:background="@drawable/option" />
+    
+    <TextView
+        android:id="@+id/settings_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_button"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="@dimen/fs_app_title"
+        android:textColor="@color/light_black" />
+    
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- layout_date.xml -->
+    <color name="red">#FFBD2325</color> <!-- 节日名称的字体颜色 -->
+    <color name="gray">#FF606060</color><!-- 农历日期的字体颜色 -->
+    <color name="light_gray">#FFA4A4A4</color><!-- 不可选择的日期的字体颜色 -->
+    
+    <!-- 公用颜色：黑/白/透明 -->
+    <color name="black">#FF000000</color>
+    <color name="light_black">#FF303030</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_white">#FFE6E6F6</color>
+    <color name="transparent">#00000000</color>
+    
+</resources>

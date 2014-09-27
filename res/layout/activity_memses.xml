@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xml_back_app"
+    tools:context=".MensesActivity" >
+    
+    <include
+        android:id="@+id/layout_app_title"
+        layout="@layout/plugin_app_title" />
+
+    <LinearLayout
+        android:id="@+id/layout_date_navigation_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_nav"
+        android:layout_below="@id/layout_app_title"
+        android:background="@drawable/xml_back_date_navigation"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/p_hide"
+        android:paddingLeft="@dimen/p_nest"
+        android:paddingRight="@dimen/p_nest"
+        android:paddingTop="@dimen/p_nest" >
+
+        <include layout="@layout/plugin_date_navigation_title" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_app_title"
+        android:layout_marginTop="@dimen/m_link_vertical_top" >
+
+        <include layout="@layout/plugin_view_link" />
+    </RelativeLayout>
+
+    <!-- 日历主体的容器 -->
+    <pku.gsy.app.view.HorizontalWorkspace 
+        android:id="@+id/layout_calendar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_calendar"
+        android:layout_below="@id/layout_date_navigation_title"
+        android:layout_marginTop="@dimen/m_hide"
+        android:background="@color/light_black"
+        android:orientation="vertical" >
+        <include
+            android:id="@+id/calendar1"
+            layout="@layout/plugin_calendar" />
+        
+        <include
+            android:id="@+id/calendar2"
+            layout="@layout/plugin_calendar" />
+        
+    </pku.gsy.app.view.HorizontalWorkspace>
+    
+    <View
+        android:id="@+id/layout_back_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_bottom"
+        android:layout_below="@id/layout_calendar_container"
+        android:layout_marginLeft="@dimen/m_bottom_coner_fix"
+        android:layout_marginRight="@dimen/m_bottom_coner_fix"
+        android:background="@drawable/bottom" />
+    
+    <!-- 提示的部分 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_back_bottom"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/m_span" >
+        
+        <include 
+            android:id="@+id/hint1"
+            layout="@layout/plugin_hint_menses" />
+        
+        <include
+            android:id="@+id/hint2"
+            layout="@layout/plugin_hint_menses2" />
+        
+        <Button
+			android:id="@+id/btn_back"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/h_hint"
+			android:background="@drawable/xml_back_hint3_press"
+			android:gravity="center"
+			android:padding="10dp"
+			android:text="@string/back"
+			android:textColor="@color/white"
+			android:textSize="@dimen/fs_app_title"
+			android:textStyle="bold" />
+        
+    </LinearLayout>
+    
+    <ViewStub
+        android:id="@+id/stub_settings_menses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:layout="@layout/stub_settings_menses"
+        android:visibility="gone" />
+    
+    <ViewStub
+        android:id="@+id/stub_history_adjuster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:layout="@layout/stub_history_adjuster"
+        android:visibility="gone" />
+    
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <padding
+        android:left="@dimen/p_dialog"
+        android:top="@dimen/p_dialog"
+        android:right="@dimen/p_dialog"
+        android:bottom="@dimen/p_dialog" />
+    
+    <solid
+        android:color="#FFE6E6F6" />
+    
+    <stroke
+        android:width="@dimen/w_dialog_stroke"
+        android:color="#FFF6F6F6" />
+
+    <corners android:radius="@dimen/r_dialog_coner" />
+
+</shape>

@@ -1,0 +1,8 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txt_slideunit"
+    style="@style/DefaultText"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:background="@drawable/xml_back_btn_pass"
+    android:text="@string/blank" />

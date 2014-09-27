@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_date"
+    android:layout_height="@dimen/h_date"
+    android:background="@drawable/xml_back_date"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clickable="false"
+    android:focusable="false" >
+    
+    <TextView
+        android:id="@+id/txt_solar"
+        android:layout_width="@dimen/w_date"
+        android:layout_height="@dimen/h_date"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="@string/blank"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/fs_date_solar"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    
+    <LinearLayout
+        android:layout_width="@dimen/w_date"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+        
+        <View
+            android:id="@+id/hint"
+            android:layout_width="8dp"
+            android:layout_height="6dp"
+            android:background="@null" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

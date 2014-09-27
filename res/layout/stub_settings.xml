@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+    
+    <View
+        android:id="@+id/settings_outside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C2848C94"
+		android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/settings_list"
+        android:layout_width="@dimen/w_dialog"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/xml_back_dialog"
+        android:divider="@null"
+        android:visibility="gone" />
+
+</RelativeLayout>

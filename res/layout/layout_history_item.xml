@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|left"
+    android:paddingBottom="8dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="8dp"
+    android:text="@string/default_date"
+    android:textColor="@color/light_black"
+    android:textSize="@dimen/fs_app_title"
+    android:textStyle="bold" />

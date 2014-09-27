@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    
+    <!-- 第一个提示（农历）的蓝绿色背景 -->
+    
+    <gradient
+        android:startColor="#FF00A69A"
+        android:endColor="#FF00A69A" />
+
+    <corners android:radius="8dip" />
+
+</shape>

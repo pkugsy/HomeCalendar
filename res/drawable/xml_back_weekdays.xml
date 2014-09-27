@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    
+    <!-- 日历主体的星期一到星期日标题部分的蓝绿色背景 -->
+    
+    <gradient
+        android:angle = "270"
+        android:startColor="#FF048171"
+        android:endColor="#FF00A89D" />
+
+</shape>

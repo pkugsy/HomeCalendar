@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h_hint"
+    android:background="@drawable/xml_back_hint3"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="@dimen/w_hint_title"
+        android:layout_height="@dimen/h_hint_content"
+        android:layout_marginBottom="@dimen/m_hint_vertical"
+        android:layout_marginLeft="@dimen/m_hint_left"
+        android:layout_marginRight="@dimen/m_hint_spacing"
+        android:layout_marginTop="@dimen/m_hint_vertical"
+        android:gravity="center"
+        android:text="@string/festival_hint"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fs_hint_title"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="@dimen/w_hint_separate"
+        android:layout_height="@dimen/h_hint"
+        android:layout_marginRight="@dimen/m_hint_spacing"
+        android:background="@drawable/hint3_line" />
+
+    <View
+        android:id="@+id/img_star"
+        android:layout_width="@dimen/w_hint_img"
+        android:layout_height="@dimen/h_hint_content"
+        android:layout_marginBottom="@dimen/m_hint_vertical"
+        android:layout_marginRight="@dimen/m_hint_spacing"
+        android:layout_marginTop="@dimen/m_hint_vertical"
+        android:background="@drawable/star_aquarius" />
+
+    <TextView
+        android:id="@+id/txt_hint3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/h_hint_content"
+        android:layout_marginBottom="@dimen/m_hint_vertical"
+        android:layout_marginTop="@dimen/m_hint_vertical"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:text="@string/default_festival"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fs_hint_content" />
+
+    <ImageButton
+        android:layout_width="@dimen/w_hint_img"
+        android:layout_height="@dimen/h_hint_content"
+        android:layout_marginBottom="@dimen/m_hint_vertical"
+        android:layout_marginRight="@dimen/m_hint_spacing"
+        android:layout_marginTop="@dimen/m_hint_vertical"
+        android:background="@drawable/xml_back_img_btn"
+        android:contentDescription="@string/blank"
+        android:scaleType="fitXY"
+        android:src="@drawable/nav_right_small" />
+
+</LinearLayout>

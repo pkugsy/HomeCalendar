@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    
+    <!-- 第三个提示（节日）的蓝色背景 -->
+    
+    <gradient
+        android:startColor="#FFFF7400"
+        android:endColor="#FFFF7400" />
+
+    <corners android:radius="8dp" />
+
+</shape>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageButton
+        android:id="@+id/btn_nav_left"
+        android:layout_width="@dimen/w_button"
+        android:layout_height="@dimen/h_button"
+        android:background="@drawable/xml_back_img_btn"
+        android:contentDescription="@string/blank"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nav_left" />
+
+    <Button
+        android:id="@+id/btn_nav_datetitle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/h_button"
+        android:layout_weight="1"
+        android:background="@drawable/xml_back_img_btn"
+        android:gravity="center"
+        android:text="@string/default_date"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fs_nav_title"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <ImageButton
+        android:id="@+id/btn_nav_right"
+        android:layout_width="@dimen/w_button"
+        android:layout_height="@dimen/h_button"
+        android:background="@drawable/xml_back_img_btn"
+        android:contentDescription="@string/blank"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nav_right" />
+
+</merge>

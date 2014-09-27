@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h_title"
+    android:background="@color/transparent"
+    android:orientation="horizontal"
+    android:padding="@dimen/p_nest" >
+
+    <!-- Dynamic Logo -->
+    <LinearLayout
+        android:id="@+id/logo_main"
+        android:layout_width="@dimen/w_button"
+        android:layout_height="@dimen/h_button"
+        android:background="@drawable/ic_launcher_back"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/logo_month"
+            android:layout_width="@dimen/w_button"
+            android:layout_height="@dimen/h_logo_month"
+            android:contentDescription="@string/blank"
+            android:src="@drawable/month_dec" />
+
+        <TextView
+            android:id="@+id/logo_day"
+            android:layout_width="@dimen/w_button"
+            android:layout_height="@dimen/h_logo_day"
+            android:gravity="center_horizontal|top"
+            android:layout_marginTop="@dimen/m_logo_fix"
+            android:text="@string/ten"
+            android:textColor="@color/black"
+            android:textScaleX="1.3"
+            android:textSize="@dimen/fs_logo_day"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_apptitle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/h_button"
+        android:layout_marginLeft="@dimen/m_app_spacing"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fs_app_title" />
+
+    <ImageButton
+        android:id="@+id/btn_settings"
+        android:layout_width="@dimen/w_button"
+        android:layout_height="@dimen/h_button"
+        android:background="@drawable/xml_back_img_btn"
+        android:contentDescription="@string/blank"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nav_settings" />
+
+</LinearLayout>

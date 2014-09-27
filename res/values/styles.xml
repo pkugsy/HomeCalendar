@@ -1,0 +1,75 @@
+<resources>
+    
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+    <style name="WeekdayStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/fs_weekdays</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="PassButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/h_pass_btn</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/s_pass_spacing</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/fs_pass</item>
+        <item name="android:background">@drawable/xml_back_btn_pass</item>
+    </style>
+    
+    <style name="DefaultText" parent="AppBaseTheme">
+        <item name="android:text">@string/blank</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="DefaultEdit" parent="DefaultText">
+        <item name="android:layout_width">204dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:background">@drawable/xml_back_edittext</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <style name="GridStyle" parent="AppBaseTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:horizontalSpacing">1dp</item>
+        <item name="android:verticalSpacing">1dp</item>
+        <item name="android:listSelector">@null</item>
+        <item name="android:stretchMode">columnWidth</item>
+    </style>
+
+</resources>

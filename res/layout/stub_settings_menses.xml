@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/layout_id_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF00A69A"
+        android:gravity="center_vertical|left"
+        android:padding="10dp"
+        android:text="@string/settings_en"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fs_app_title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/layout_id_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_id_01"
+        android:text="@string/period" />
+
+    <LinearLayout
+        android:id="@+id/layout_id_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/m_hint_vertical"
+        android:layout_marginTop="@dimen/m_hint_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@id/layout_id_02"
+        android:background="@drawable/xml_back_orange"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/period_minus"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_back_img_btn"
+            android:contentDescription="@string/blank"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@android:drawable/ic_media_rew" />
+
+        <TextView
+            android:id="@+id/period_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/one"
+            android:textScaleX="1.2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <ImageButton
+            android:id="@+id/period_add"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_back_img_btn"
+            android:contentDescription="@string/blank"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@android:drawable/ic_media_ff" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/layout_id_04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_id_03"
+        android:text="@string/duration" />
+
+    <LinearLayout
+        android:id="@+id/layout_id_05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/m_hint_vertical"
+        android:layout_marginTop="@dimen/m_hint_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_below="@id/layout_id_04"
+        android:background="@drawable/xml_back_orange"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/duration_minus"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_back_img_btn"
+            android:contentDescription="@string/blank"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@android:drawable/ic_media_rew" />
+
+        <TextView
+            android:id="@+id/duration_value"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/one"
+            android:textScaleX="1.2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <ImageButton
+            android:id="@+id/duration_add"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_back_img_btn"
+            android:contentDescription="@string/blank"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@android:drawable/ic_media_ff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/layout_id_06"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_id_05"
+        android:text="@string/history" />
+
+    <LinearLayout
+        android:id="@+id/layout_id_07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/xml_back_hint1_press"
+            android:text="@string/ok_en"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fs_app_title"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/xml_back_hint1_press"
+            android:text="@string/cancel_en"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fs_app_title"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_id_08"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:layout_marginBottom="@dimen/m_hint_vertical"
+	    android:layout_marginTop="@dimen/m_hint_vertical"
+        android:layout_above="@id/layout_id_07"
+        android:orientation="horizontal" >
+
+        <TableRow
+	        android:id="@+id/option_password"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="2"
+	        android:layout_margin="1dp"
+	        android:padding="10dp"
+	        android:background="@drawable/xml_back_orange_press"
+	        android:gravity="center"
+	        android:clickable="true" >
+	        
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+		        android:text="@string/password_switch"
+		        android:textColor="@color/white"
+		        android:textSize="@dimen/fs_app_title"
+		        android:textStyle="bold"
+	            android:gravity="left" />
+	        
+	        <View
+	            android:id="@+id/option_view"
+	            android:layout_width="53dp"
+	            android:layout_height="18dp"
+	            android:background="@drawable/active" />
+	        
+	    </TableRow>
+        
+        <Button
+	        android:id="@+id/btn_setpassword"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_margin="1dp"
+	        android:background="@drawable/xml_back_orange_press"
+	        android:gravity="center"
+	        android:padding="10dp"
+	        android:text="@string/set"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/fs_app_title"
+	        android:textStyle="bold" />
+        
+    </LinearLayout>
+
+    
+    <ListView
+        android:id="@+id/history_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/m_hint_vertical"
+        android:layout_marginTop="@dimen/m_hint_vertical"
+        android:layout_below="@id/layout_id_06"
+        android:layout_above="@id/layout_id_08"
+        android:divider="#FF4080EE"
+        android:dividerHeight="1dp" />
+    
+    <LinearLayout
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:background="#FFFF9640"
+        android:layout_above="@id/layout_id_08"
+        android:layout_marginBottom="-3dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        
+        <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/password" />
+            
+        <TextView
+            android:id="@+id/txt_password"
+            style="@style/DefaultEdit"
+            android:textIsSelectable="true"
+            android:layout_width="match_parent" />
+            
+        <GridView
+            android:id="@+id/numpad"
+            style="@style/GridStyle"
+            android:listSelector="@drawable/xml_selector_transparent"
+            android:numColumns="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

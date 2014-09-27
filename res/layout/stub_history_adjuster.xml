@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent" >
+
+    <View
+        android:id="@+id/datepicker_outside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C2848C94"
+        android:visibility="gone" />
+
+    <TableLayout
+        android:id="@+id/datepicker"
+        android:layout_width="@dimen/w_dialog"
+        android:layout_height="@dimen/h_picker"
+        android:layout_centerInParent="true"
+        android:background="@drawable/xml_back_dialog"
+        android:visibility="gone" >
+
+        <TableRow
+            android:id="@+id/picker_root"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_picker_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/yearPicker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/m_picker_spacing_out"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/default_year"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/m_picker_spacing_out"
+                android:layout_marginRight="@dimen/m_picker_spacing_out"
+                android:text="@string/year"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/monthPicker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/default_month"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/m_picker_spacing_out"
+                android:layout_marginRight="@dimen/m_picker_spacing_out"
+                android:text="@string/month"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <LinearLayout
+                android:id="@+id/dayPicker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/picker_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/xml_back_img_btn"
+                    android:contentDescription="@string/blank"
+                    android:src="@android:drawable/arrow_up_float" />
+
+                <TextView
+                    android:id="@+id/picker_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/default_day"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+                <ImageButton
+                    android:id="@+id/picker_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/xml_back_img_btn"
+                    android:contentDescription="@string/blank"
+                    android:src="@android:drawable/arrow_down_float" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/m_picker_spacing_out"
+                android:layout_marginRight="@dimen/m_picker_spacing_out"
+                android:text="@string/day"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_picker_cancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/h_button"
+                android:layout_weight="1"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/btn_picker_ok"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/h_button"
+                android:layout_weight="1"
+                android:text="@string/ok" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Dimensions for Nexus5 -->
+    
+    <!-- title and settings 及 全局使用 -->
+    <dimen name="h_title">58dp</dimen> <!-- 38(button) + 2(nest) + 2(nest) -->
+    <dimen name="h_button">50dp</dimen>
+    <dimen name="w_button">50dp</dimen>
+    <dimen name="fs_app_title">18sp</dimen>
+    <dimen name="m_app_spacing">6dp</dimen>
+    
+    <!-- 动态logo -->
+    <dimen name="h_logo_month">24dp</dimen> <!-- 20(month) + 22(day) + fix(-4)  = 38(button) -->
+    <dimen name="h_logo_day">28dp</dimen>
+    <dimen name="m_logo_fix">-1dp</dimen>
+    <dimen name="fs_logo_day">14sp</dimen>
+    
+    <!-- date navigation -->
+    <dimen name="h_nav">58dp</dimen> <!-- 日期显示及左右控制栏 38(button)+2(nest)+2(nest)+4(coner) -->
+    <dimen name="r_coner">4dp</dimen>
+    <dimen name="p_nest">4dp</dimen>
+    <dimen name="p_hide">8dp</dimen>
+    <dimen name="fs_nav_title">20sp</dimen>
+    
+    <!-- link -->
+    <dimen name="h_link">28dp</dimen>
+    <dimen name="w_link">16dp</dimen>
+    <dimen name="m_link_horizontal_offset">50dp</dimen>
+    <dimen name="m_link_vertical_top">-14dp</dimen> <!-- 28(link)/2 -->
+    
+    <!-- 日历主体部分 -->
+    <dimen name="h_calendar">320dp</dimen> <!-- (44(h_date)+1)*6 + 1(p_calendar_top) + 25(weekdays) -->
+    <dimen name="h_calendar_grid">295dp</dimen> <!-- (44+1)*6 + 1 -->
+    <dimen name="p_calendar_top">1dp</dimen>
+    <dimen name="p_calendar_left">2dp</dimen> <!-- 修正calendar的位置，使之居中 -->
+    <dimen name="s_spacing">1dp</dimen> <!-- 日期间的间隔距离 -->
+    <dimen name="h_weekdays">25dp</dimen>
+    <dimen name="p_weekdays_left">3dp</dimen> <!-- 修正weekdays的位置，使之居中 -->
+    <dimen name="fs_weekdays">14sp</dimen>
+    <dimen name="m_hide">-6dp</dimen> <!-- p_hide声明要隐藏的多余像素，m_hide用来覆盖这些像素达到隐藏的目的 -->
+    <dimen name="m_span">8dp</dimen> <!-- 日历主体和hint之间的空隙宽度 -->
+    
+    <!-- 日期格子 -->
+    <dimen name="h_date">48dp</dimen> <!-- 26(soloar) + 18(lunar) -->
+    <dimen name="w_date">44dp</dimen>
+    <dimen name="h_date_solar">26dp</dimen>
+    <dimen name="h_date_lunar">18dp</dimen>
+    <dimen name="w_date_festival">14dp</dimen>
+    <dimen name="fs_date_solar">18sp</dimen>
+    <dimen name="fs_date_lunar">10sp</dimen>
+    <dimen name="fs_date_festival">9sp</dimen>
+    
+    <!-- bottom -->
+    <dimen name="h_bottom">6dp</dimen>
+    <dimen name="m_bottom_coner_fix">-2dp</dimen>
+    
+    <!-- hint -->
+    <dimen name="h_hint">52dp</dimen> <!-- 42(content) + 2(vertical) + 2(vertical) -->
+    <dimen name="h_hint_content">48dp</dimen>
+    <dimen name="w_hint_img">48dp</dimen>
+    <dimen name="h_hint_span">4dp</dimen>
+    <dimen name="w_hint_title">48dp</dimen>
+    <dimen name="m_hint_vertical">2dp</dimen>
+    <dimen name="m_hint_left">6dp</dimen>
+    <dimen name="m_hint_spacing">4dp</dimen>
+    <dimen name="fs_hint_title">16sp</dimen>
+    <dimen name="fs_hint_content">14sp</dimen>
+    <dimen name="w_hint_separate">3dp</dimen>
+    
+    <!-- date picker -->
+    <dimen name="h_picker">270dp</dimen> <!-- 200 + 58 + 2 * 2 + 4 * 2 -->
+    <dimen name="h_picker_content">200dp</dimen>
+    <dimen name="h_picker_button">58dp</dimen>
+    <dimen name="m_picker_spacing_out">10dp</dimen>
+    <dimen name="m_picker_spacing_in">4dp</dimen>
+    
+    <!-- Password Activity -->
+    <dimen name="s_pass_spacing">4dp</dimen>
+    <dimen name="w_pass_btn">75dp</dimen>
+    <dimen name="h_pass_btn">65dp</dimen>
+    <dimen name="h_pass_btn_double">134dp</dimen>
+    <dimen name="fs_pass">28sp</dimen>
+    
+</resources>
